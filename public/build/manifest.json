@@ -1,0 +1,16 @@
+{
+  "public/img/Untitled/header-img.jpg": {
+    "file": "assets/header-img-b89ud_zU.jpg",
+    "src": "public/img/Untitled/header-img.jpg"
+  },
+  "resources/css/app.css": {
+    "file": "assets/app-TkUixILa.css",
+    "src": "resources/css/app.css",
+    "isEntry": true
+  },
+  "resources/js/app.js": {
+    "file": "assets/app-beTuQtbN.js",
+    "src": "resources/js/app.js",
+    "isEntry": true
+  }
+}
