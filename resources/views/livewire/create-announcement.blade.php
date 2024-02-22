@@ -52,10 +52,10 @@
           @if (!empty($images))
           <div class="row">
             <div class="col-12">
-              <div class="row borderForm rounded shadow ">
+              <div class="row borderForm rounded shadow">
                 @foreach ($images as $key => $image)
                 <div class="col my-3">
-                  <div class="img-preview mx-auto shadow rounded" style="background-image: url({{$image->temporaryUrl()}});"></div>
+                  <div class="img-preview mx-auto shadow rounded" style="background-image: url({{$image->temporaryUrl()}}); background-repeat:no-repeat; background-position:center;"></div>
                   <button type="button" class="btn btn-danger shadow d-block text-center mt-2 mx-auto" wire:click="removeImages({{$key}})">{{__('ui.cancella')}}</button>
                 </div>
                     
