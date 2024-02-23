@@ -12,7 +12,7 @@
                     @forelse ($category->announcements as $announcement)
                     <div class="col-12 col-md-3 my-3 mt-5">
                         <div class="card card-custom " data-aos="fade-right" data-aos-duration="1000">
-                            <img class="card-img-top   img-fluid  rounded-top width-card " src="https://picsum.photos/200" alt="" >
+                            <img class="card-img-top   img-fluid  rounded-top width-card " src={{!$announcement->images()->get()->isEmpty() ? $announcement->images()->first()->getUrl(300,300) : "https://picsum.photos/200"}} alt="" >
                             <div class="card-body shadow d-flex flex-column justify-content-between">
                                 <div>
                                     <h5 class="card-title text-truncate fw-bold ">{{$announcement->title}}</h5>
